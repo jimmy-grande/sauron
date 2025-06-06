@@ -1,0 +1,2 @@
+# sauron
+minimalist observability library
