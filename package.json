@@ -1,0 +1,40 @@
+{
+  "name": "sauron",
+  "version": "0.1.0",
+  "description": "Minimalist observability library",
+  "license": "Apache-2.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/username/sauron.git"
+  },
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "module",
+  "scripts": {
+    "lint": "eslint . --ext .ts",
+    "format": "prettier --write .",
+    "test": "vitest",
+    "build": "tsc",
+    "release": "changeset publish",
+    "version": "changeset version",
+    "prepare": "husky install",
+    "prepublishOnly": "pnpm build"
+  },
+  "engines": {
+    "node": ">=22"
+  },
+  "packageManager": "pnpm@8.6.3",
+  "devDependencies": {
+    "@changesets/cli": "^2.26.2",
+    "@commitlint/cli": "^17.7.1",
+    "@commitlint/config-conventional": "^17.7.0",
+    "@typescript-eslint/eslint-plugin": "^7.7.0",
+    "@typescript-eslint/parser": "^7.7.0",
+    "@types/node": "22.0.0",
+    "eslint": "8.57.0",
+    "husky": "^8.0.3",
+    "prettier": "^3.2.5",
+    "typescript": "5.4.5",
+    "vitest": "1.4.0"
+  }
+}
